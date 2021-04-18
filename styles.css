@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;    
+    margin: 3%;
+    font-size: 13px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin: 0;    
+}
+
+.grid-container{
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    grid-template-columns: repeat(4,  1fr);
+    grid-template-rows: repeat(2, min-content);
+    align-items: stretch;
+    grid-auto-rows: min-content;
+    gap:15px;
+    padding: 10px;
+    font-family: 'Barlow Semi Condensed';
+}
+.item1{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+   
+}
+
+.item{
+    padding: 1.5rem;
+    border-radius: .75rem;
+}
+.profile, .profile1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+.profile1{
+    display: inline-flex;
+}
+
+
+
+.item1 .name{
+    color: hsl(263, 25%, 80%);;
+}
+.item1 .designation{
+    color: hsl(263, 25%, 65%);;
+}
+
+
+.item2{
+    background-color: hsl(217, 19%, 35%);
+}
+.item1, .item5{
+    grid-column: span 2;
+}
+
+.item3, .item4{
+    background-color: hsl(0, 0%, 100%);
+}
+.item5{
+    background-color: hsl(219, 29%, 14%);
+}
+.item3{
+    grid-row: span 2;    
+}
+.item5 .name{
+    color: hsl(219, 29%, 86%);
+}
+.item3 .name, .item4 .name{
+    color: hsl(217, 19%, 35%);
+}
+.item3 .designation, .item4 .designation {
+    color: hsl(217, 20%, 59%);
+}
+
+.profile-pic{
+    border: none;
+    border-radius: 10000px;
+    height: 36px;
+    width:36px;
+    
+}
+.pic1{
+    border: 1.5px solid hsl(262, 26%, 73%);
+}
+.pic2{
+    border: 1.5px solid hsl(217, 19%, 35%);
+}
+.pic3{
+    border: 1.5px solid hsl(213, 6%, 88%);
+}
+.pic4{
+    border: 1.5px solid hsl(216, 6%, 85%);
+}
+.pic5{
+    border: 1.5px solid hsl(261, 42%, 50%);
+}
+
+.name-desig{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.item2 .name{
+    color:hsl(215, 19%, 83%);
+}
+.item2 .designation{
+    color:  hsl(215, 20%, 60%);
+}
+.item5 .designation{
+    color:  hsl(221, 15%, 63%);;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-cont, .sub-cont{  
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.main-cont{
+    padding-top: .75rem;
+    font-weight: 600;
+}
+.sub-cont{
+    font-weight: 500;
+}
+
+.item1 .main-cont{
+    color:  hsl(266, 17%, 92%);
+}
+.item1 .sub-cont{
+    color:  hsl(264, 23%, 70%);
+}
+
+.item2 .main-cont{
+    color:  hsl(215, 19%, 83%);
+}
+
+.item2 .sub-cont{
+    color:  hsl(215, 20%, 71%);
+}
+.item3 .main-cont, .item4 .main-cont{
+    color:  hsl(217, 19%, 35%);
+}
+.item3 .sub-cont, .item4 .sub-cont{
+    color:  hsl(217, 20%, 59%);
+}
+
+.item5 .main-cont{
+    color: hsl(221, 24%, 87%);
+}
+
+.item5 .sub-cont{
+    color: hsl(221, 15%, 63%);
+}
+
+@media (max-width: 700px) {
+
+ body{
+        margin: 0;
+        min-height: 100vh;    
+        margin: 3%;
+        font-size: 13px;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ }
+    
+    
+.grid-container{
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, min-content);    
+    grid-auto-rows: min-content;    
+    gap:15px;
+    padding: 10px;
+    font-family: 'Barlow Semi Condensed';
+}
+
+.item1, .item2, .item3, .item4, .item5{
+   grid-column: span 2;
+}
+
+.item1{
+        background-position: 85% 0;
+    }
+}
